@@ -1,0 +1,21 @@
+package sprringmvc.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HomeController {
+
+	@RequestMapping("/home")
+	public String home() {
+		System.out.println("Home controller run....");
+		return "index";
+	}
+	
+	@RequestMapping("/about")
+	public String about() {
+		System.out.println("About controller run....");
+		return "about";
+	}
+	
+}
